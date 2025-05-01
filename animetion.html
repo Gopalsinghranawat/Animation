@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style>
+        .container{
+            width: 560px;
+            height: 25vh;
+            background-color: rgb(231, 143, 187);
+            flex-wrap: wrap;
+        }
+
+        .box{
+            width: 50px;
+            height: 30px;
+            margin: 10px;
+            background-color: rgb(219, 233, 94);
+            animation-name: gopsaa;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes gopsaa {
+           from{
+                background-color:rgb(219, 233, 94) ;
+           }
+           to{
+                background-color: rgb(118, 184, 214);
+            transform: translateX(500px);
+           }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">AK</div>
+        <div class="box">GO</div>
+    </div>
+</body>
+</html>
